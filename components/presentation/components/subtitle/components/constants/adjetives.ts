@@ -1,0 +1,1 @@
+export const adjectives = ["Creative", "Innovative", "Dynamic", "Elegant", "Efficient"];
