@@ -7,21 +7,21 @@
 }
 
 .presentation-title { 
-    @apply text-6xl mb-3
+    @apply lg:text-6xl text-4xl mb-3 
 }
 
 .presentation-subtitle__container {
-    @apply flex items-center gap-2
+    @apply flex items-center gap-2 flex-wrap lg:flex-nowrap
 }
 
 .presentation-subtitle {
-    @apply text-3xl font-normal flex
+    @apply lg:text-3xl text-2xl font-normal flex
 }
 
 .presentation-subtitle__habilities-container {
-    @apply bg-gradient-to-r from-purple-600 from-70% to-purple-500  w-48 px-4 py-2 rounded-lg shadow-md
+    @apply bg-gradient-to-r from-purple-600 from-70% to-purple-500  w-48 px-4 py-2 rounded-lg shadow-md flex-grow ml-6 lg:ml-0 lg:flex-grow-0
 }
 
 .presentation-subtitle__habilities {
-    @apply text-background text-3xl text-center
+    @apply text-background lg:text-3xl text-2xl text-center
 }
