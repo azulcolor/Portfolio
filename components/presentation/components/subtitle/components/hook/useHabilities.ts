@@ -7,7 +7,7 @@ export const useHabilities = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAdjectiveIndex((prevIndex) => (prevIndex + 1) % adjectives.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 

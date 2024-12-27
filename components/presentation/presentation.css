@@ -3,19 +3,27 @@
 @tailwind utilities;
 
 .presentation-container {
-    @apply h-screen flex flex-col justify-center items-center p-6 sticky top-0 bg-background z-0
+    @apply h-screen flex lg:flex-row flex-col justify-center lg:px-8 px-6 items-center gap-8 sticky top-0 bg-background z-0
+}
+
+.image-container {
+    @apply grow 
 }
 
 .presentation-title { 
-    @apply lg:text-6xl text-4xl mb-3 
+    @apply lg:text-6xl text-4xl font-normal text-title mb-1
+}
+
+.presentation-title__subtitle {
+    @apply lg:text-2xl text-subtitle text-base
 }
 
 .presentation-subtitle__container {
-    @apply flex items-center gap-2 flex-wrap lg:flex-nowrap
+    @apply flex items-center gap-2 lg:gap-4 flex-wrap lg:flex-nowrap
 }
 
 .presentation-subtitle {
-    @apply lg:text-3xl text-2xl font-normal flex
+    @apply lg:text-3xl text-2xl font-normal flex text-gray-500
 }
 
 .presentation-subtitle__habilities-container {
@@ -25,3 +33,4 @@
 .presentation-subtitle__habilities {
     @apply text-background lg:text-3xl text-2xl text-center
 }
+

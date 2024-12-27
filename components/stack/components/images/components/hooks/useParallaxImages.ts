@@ -11,7 +11,7 @@ export const useParallaxImages = (baseVelocity: number) => {
       clamp: false
     });
   
-    const x = useTransform(baseX, (v) => `${wrap(-20, -77.35, v)}%`)
+    const x = useTransform(baseX, (v) => `${wrap(-20, -89.85, v)}%`)
   
     const directionFactor = useRef<number>(1)
     useAnimationFrame((_, delta) => {

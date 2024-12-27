@@ -3,10 +3,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useHabilities } from "./hook";
 
-
 export const Habilities = () => {
-
-    const { currentAdjective } = useHabilities()
+  const { currentAdjective } = useHabilities();
 
   return (
     <div className="presentation-subtitle__habilities-container">
@@ -17,7 +15,7 @@ export const Habilities = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           {currentAdjective}
         </motion.p>

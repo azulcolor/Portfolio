@@ -17,8 +17,6 @@ export const ParallaxImages = ({ children, baseVelocity }: ParallaxProps) => {
       <motion.div className="scroller" style={{ x }}>
         {children}     
         {children}     
-        {children}     
-        {children}     
       </motion.div>
     </div>
   );
