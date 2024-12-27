@@ -1,4 +1,5 @@
 @import '../components/presentation/presentation.css';
+@import '../components/stack/stack.css';
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --scrollbar: #8400ff;
 }
 
 body {
@@ -15,5 +17,27 @@ body {
 }
 
 * {
-  @apply font-sans p-0 m-0 box-border;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: burble; /* Fondo transparente */
+}
+
+/* Thumb (barra que se desplaza) */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 10px; /* Redondeado */
+}
+
+/* Esquinas del scrollbar */
+::-webkit-scrollbar-corner {
+  background: transparent; /* Esquinas transparentes */
+}
+
+/* Asegúrate de que el diseño general no interfiera */
+html {
+  scroll-snap-type: y mandatory; /* O ajústalo según tus necesidades */
 }

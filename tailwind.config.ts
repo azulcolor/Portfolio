@@ -17,6 +17,8 @@ export default {
         title: "hsl(0, 0, 80)",
         text: "hsl(0, 0, 0)",
         subtitle: "hsl(0, 0, 0)",
+        scrollbar: "hsl(0, 0, 80)",
+        stackBg: "hsl(248, 30, 14)",
       },
       fontFamily: {
         sans: ["var(--font-gelasio)"],
