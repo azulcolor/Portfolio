@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "hsl(0, 0, 95)",
+        background: "hsl(0, 0, 100)",
         foreground: "var(--foreground)",
         principal: "hsl(248, 89, 68)", 
         secondary: "hsl(252, 100, 88)",
