@@ -2,7 +2,7 @@ import { Images } from "./components/images";
 
 export const Stack = () => {
   return (
-    <div className="stack-container">
+    <section className="stack-container dark-section">
       <div className=" flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-3">
           <h2 className="text-orange-200 text-5xl ">Superpowers</h2>
@@ -14,6 +14,6 @@ export const Stack = () => {
         </p>
       </div>
       <Images />
-    </div>
+    </section>
   );
 };

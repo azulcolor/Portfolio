@@ -5,7 +5,7 @@ import { Subtitle } from "./components/subtitle";
 
 export const Presentation = () => {
   return (
-    <section className="presentation-container">
+    <section className="presentation-container light-section">
       <div>
         <Title />
         <Subtitle />

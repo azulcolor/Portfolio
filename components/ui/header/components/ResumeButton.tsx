@@ -5,14 +5,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-export const ResumeButton = () => {
+interface Props {
+  isDarkSection: boolean;
+}
+
+export const ResumeButton = ({ isDarkSection }: Props) => {
   const [text, setText] = useState("Resume");
 
   return (
     <Link
       href={resume}
       target="_blank"
-      className="header-list__button"
+      className={`header-list__button transition-colors ${isDarkSection && "bg-purple-600"}`}
       onMouseEnter={() => setText("Let's go")}
       onMouseLeave={() => setText("Resume")}
     >
