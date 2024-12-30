@@ -11,7 +11,7 @@ export const Presentation = () => {
         <Subtitle />
       </div>
       <div className="image-container">
-        <Image src={myImage} alt="me" height={300} />
+        <Image src={myImage} alt="me" height={400} />
       </div>
     </section>
   );

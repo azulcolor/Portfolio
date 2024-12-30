@@ -3,30 +3,29 @@
 @tailwind utilities;
 
 .presentation-container {
-    @apply h-screen flex flex-col justify-center px-6 items-center gap-8 sticky top-0 bg-background z-0 md:flex-row md:justify-evenly md:px-8
+  @apply h-screen flex flex-col justify-center px-6 items-center gap-14 sticky top-0 bg-background z-0 md:flex-row md:justify-evenly md:px-8 md:gap-8;
 }
 
-.presentation-title { 
-    @apply text-4xl font-normal text-title mb-3 md:mb-1 md:text-6xl
+.presentation-title {
+  @apply text-4xl font-normal text-title mb-3 md:mb-1 md:text-6xl;
 }
 
 .presentation-title__subtitle {
-    @apply text-subtitle text-base md:text-2xl
+  @apply text-subtitle text-xl md:text-2xl;
 }
 
 .presentation-subtitle__container {
-    @apply flex flex-row gap-6 items-center flex-wrap mt-12 md:flex-nowrap md:mt-0 md:gap-4 
+  @apply flex flex-row gap-4 items-center flex-wrap mt-12 md:flex-nowrap md:mt-0;
 }
 
 .presentation-subtitle {
-    @apply lg:text-3xl text-2xl font-normal flex text-gray-500
+  @apply lg:text-3xl text-xl font-normal flex text-gray-500;
 }
 
 .presentation-subtitle__habilities-container {
-    @apply bg-gradient-to-r from-purple-600 from-70% to-purple-500 w-48 px-4 py-2 rounded-lg shadow-md flex-grow md:ml-0 md:flex-grow-0
+  @apply bg-gradient-to-r from-purple-600 from-70% to-purple-500 w-48 px-4 py-2 rounded-lg shadow-md flex-grow md:ml-0 md:flex-grow-0;
 }
 
 .presentation-subtitle__habilities {
-    @apply text-background text-2xl text-center md:text-3xl
+  @apply text-background text-2xl text-center md:text-3xl;
 }
-
