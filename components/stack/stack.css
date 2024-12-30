@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .stack-container {
-    @apply flex flex-col items-center justify-center h-screen bg-stackBg rounded-ss-3xl rounded-se-3xl z-20 sticky top-0
+    @apply flex flex-col items-center justify-center h-screen bg-stackBg rounded-ss-3xl rounded-se-3xl z-20 sticky top-0 gap-16
 }
 
 .parallax { 

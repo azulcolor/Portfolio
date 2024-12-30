@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-container {
+    @apply fixed z-50 inset-0 bg-transparent flex items-center justify-end h-16 py-12 pr-14
+}
+
+.header-list {
+    @apply gap-16 hidden md:flex items-center
+}
+
+.header-list__routes:hover {
+    @apply text-principal transition delay-100 ease-in-out
+}
+
+.header-list__button {
+    @apply bg-green-500 text-white px-6 py-2 rounded-lg relative overflow-hidden inline-block text-center w-24 h-10 mt-1 shadow-sm
+}
+
+.header-list__button span {
+    @apply absolute left-0 right-0 transform -translate-y-1/2 whitespace-nowrap;
+}

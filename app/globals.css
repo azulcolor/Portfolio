@@ -1,5 +1,6 @@
-@import '../components/presentation/presentation.css';
-@import '../components/stack/stack.css';
+@import "../components/presentation/presentation.css";
+@import "../components/stack/stack.css";
+@import "../components/ui/ui.css";
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +15,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -23,21 +25,19 @@ body {
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-  background: burble; /* Fondo transparente */
+  background: burble;
 }
 
-/* Thumb (barra que se desplaza) */
 ::-webkit-scrollbar-thumb {
   background: var(--scrollbar);
-  border-radius: 10px; /* Redondeado */
+  border-radius: 10px;
 }
 
-/* Esquinas del scrollbar */
 ::-webkit-scrollbar-corner {
-  background: transparent; /* Esquinas transparentes */
+  background: transparent;
 }
 
-/* Asegúrate de que el diseño general no interfiera */
 html {
-  scroll-snap-type: y mandatory; /* O ajústalo según tus necesidades */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
