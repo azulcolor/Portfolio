@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .stack-container {
-    @apply flex flex-col items-center justify-center h-screen bg-stackBg rounded-ss-3xl rounded-se-3xl z-20 sticky top-0 gap-16
+    @apply flex flex-col items-center justify-center bg-stackBg rounded-ss-3xl rounded-se-3xl z-20 gap-16
 }
 
 .parallax { 
@@ -16,4 +16,24 @@
 
 .parallax .scroller {
     @apply whitespace-nowrap flex flex-nowrap gap-28
+}
+
+.stack__text-container { 
+    @apply flex flex-col items-center gap-12
+}
+
+.stack__text-container__title-container {
+    @apply flex flex-col items-center gap-3
+}
+
+.stack__text-container__title-container h2 {
+    @apply text-orange-200 text-5xl 
+}
+
+.stack__text-container__title-container p {
+    @apply text-gray-200
+}
+
+.stack__text-container__phrase { 
+    @apply text-gray-100 text-2xl px-6 md:text-3xl md:w-2/3 text-center
 }

@@ -1,28 +1,33 @@
 import { useEffect, useState } from "react";
 
 export const useChangeColor = () => {
-    const [isDarkSection, setIsDarkSection] = useState(false)
+  const [isDarkSection, setIsDarkSection] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-          // Detectar las secciones visibles
-          const sections = document.querySelectorAll("section");
-          sections.forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            const isFullyVisible =
-              rect.top <= 0 && rect.bottom >= window.innerHeight;
-    
-            // Cambiar el estado si la sección está completamente visible
-            if (isFullyVisible) {
-              setIsDarkSection(section.classList.contains("dark-section"));
-            }
-          });
-        };
-    
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-      }, []);
-    
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          console.log(entry)
+          if (entry) {
+              // Cambia el color del header según la clase de la sección
+              setIsDarkSection(entry.target.classList.contains("dark-section"));
+          }
+        });
+      },
+      {
+        root: null, // Observa en el viewport completo
+        threshold: .6, // Asegúrate de que la sección ocupa al menos el 90% del viewport
+      }
+    );
 
-      return {isDarkSection}
-}
+    // Observa todas las secciones
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  return { isDarkSection };
+};

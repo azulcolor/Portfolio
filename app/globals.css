@@ -1,6 +1,7 @@
 @import "../components/presentation/presentation.css";
 @import "../components/stack/stack.css";
 @import "../components/ui/ui.css";
+@import "../components/projects/projects.css";
 
 @tailwind base;
 @tailwind components;
@@ -40,4 +41,12 @@ body {
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+}
+
+.sticky-section {
+  @apply sticky  h-screen snap-always snap-center;
+}
+
+.snap-container { 
+  @apply h-screen snap-y scroll-smooth overflow-y-auto
 }

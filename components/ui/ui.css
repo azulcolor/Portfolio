@@ -11,7 +11,7 @@
 }
 
 .header-list__routes:hover {
-    @apply text-principal transition delay-100 ease-in-out
+    @apply text-purple-500 border-b border-purple-500 transition delay-100 ease-in-out
 }
 
 .header-list__button {
