@@ -2,5 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.projects-container { 
+    @apply  bg-black z-30 cursor-none
+}
 

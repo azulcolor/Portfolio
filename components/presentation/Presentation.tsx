@@ -1,7 +1,6 @@
 import Image from "next/image";
 import myImage from "@/public/images/presentation/coffee.gif";
-import { Title } from "./components";
-import { Subtitle } from "./components/subtitle";
+import { Title, Subtitle } from "./components";
 
 export const Presentation = () => {
   return (

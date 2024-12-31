@@ -2,7 +2,7 @@
 
 import { ResumeButton } from "./components";
 import { RoutesList } from "./components/RoutesList";
-import { useChangeColor } from "./hook";
+import { useChangeColor } from "./hooks";
 
 export const Header = () => {
   const { isDarkSection } = useChangeColor()

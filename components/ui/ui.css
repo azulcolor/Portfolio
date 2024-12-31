@@ -10,14 +10,15 @@
     @apply gap-16 hidden md:flex items-center
 }
 
-.header-list__routes:hover {
-    @apply text-purple-500 border-b border-purple-500 transition delay-100 ease-in-out
-}
-
 .header-list__button {
-    @apply bg-green-500 text-white px-6 py-2 rounded-lg relative overflow-hidden inline-block text-center w-24 h-10 mt-1 shadow-sm
+    @apply hover:cursor-none bg-green-500 text-white px-6 py-2 rounded-lg relative overflow-hidden inline-block text-center w-24 h-10 mt-1 shadow-sm
 }
 
 .header-list__button span {
     @apply absolute left-0 right-0 transform -translate-y-1/2 whitespace-nowrap;
+}
+
+.custom-cursor {
+    @apply md:fixed md:top-0 md:left-0 md:bg-white rounded-full pointer-events-none mix-blend-difference;
+    z-index: 60;
 }

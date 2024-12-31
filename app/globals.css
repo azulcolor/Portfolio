@@ -17,10 +17,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   scroll-snap-type: y mandatory;
+  cursor: none
 }
 
 * {
   box-sizing: border-box;
+  cursor: none
 }
 
 ::-webkit-scrollbar {
