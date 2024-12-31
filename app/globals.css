@@ -48,5 +48,5 @@ html {
 }
 
 .snap-container { 
-  @apply h-screen snap-y scroll-smooth overflow-y-auto
+  @apply h-screen snap-y scroll-smooth md:overflow-y-auto
 }

@@ -8,7 +8,7 @@ export const useChangeColor = () => {
       (entries) => {
         entries.forEach((entry) => {
           console.log(entry)
-          if (entry) {
+          if (entry.isIntersecting) {
               // Cambia el color del header según la clase de la sección
               setIsDarkSection(entry.target.classList.contains("dark-section"));
           }
@@ -16,7 +16,7 @@ export const useChangeColor = () => {
       },
       {
         root: null, // Observa en el viewport completo
-        threshold: .6, // Asegúrate de que la sección ocupa al menos el 90% del viewport
+        threshold: .9, // Asegúrate de que la sección ocupa al menos el 90% del viewport
       }
     );
 
