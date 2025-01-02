@@ -9,7 +9,7 @@ WORKDIR /app
 RUN echo 'public-hoist-pattern[]=*@nextui-org/*' > .npmrc
 
 COPY package.json bun.lockb ./
-RUN curl -fsSL https://bun.sh/install | sh -s -- -y && bun install  # <-- Aquí se ha añadido bun install
+RUN npm i -g bun && bun install
 
 # Rebuild the source code only when needed
 FROM base AS builder
