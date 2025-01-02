@@ -9,7 +9,7 @@ WORKDIR /app
 RUN echo 'public-hoist-pattern[]=*@nextui-org/*' > .npmrc
 
 COPY package.json bun.lockb ./
-RUN corepack enable bun && bun install
+RUN curl -fsSL https://bun.sh/install | bash -s -- -y && bun install  # <-- Aquí se ha añadido bun install
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN corepack enable bun && bun build
+RUN bun build
 
 # Production image, copy all the files and run next
 FROM base AS runner
