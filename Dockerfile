@@ -14,10 +14,10 @@ RUN npm i -g bun && bun install
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/node_modules ./node_modules  
 COPY . .
 
-RUN bun build
+RUN npm i -g bun && bun build
 
 # Production image, copy all the files and run next
 FROM base AS runner
