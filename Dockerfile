@@ -2,14 +2,14 @@ FROM node:20.11-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
-RUN apk add --no-cache libc6-compat build-base python3
+RUN apk add --no-cache libc6-compat build-base python3 curl
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 RUN echo 'public-hoist-pattern[]=*@nextui-org/*' > .npmrc
 
 COPY package.json bun.lockb ./
-RUN curl -fsSL https://bun.sh/install | bash -s -- -y && bun install  # <-- Aquí se ha añadido bun install
+RUN curl -fsSL https://bun.sh/install | sh -s -- -y && bun install  # <-- Aquí se ha añadido bun install
 
 # Rebuild the source code only when needed
 FROM base AS builder
