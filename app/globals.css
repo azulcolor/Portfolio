@@ -22,7 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
-  cursor: none
+  cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -52,3 +52,4 @@ html {
 .snap-container { 
   @apply h-screen snap-y scroll-smooth md:overflow-y-auto
 }
+
