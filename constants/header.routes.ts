@@ -2,17 +2,21 @@ import { Routes } from "@/types";
 
 export const routes: Routes = [
   {
-    route: "#projects",
-    name: "Projects",
+    route: "#presentation",
+    name: "Me",
   },
   {
     route: "#stack",
     name: "Stack",
   },
   {
-    route: "#presentation",
-    name: "About me",
+    route: "#projects",
+    name: "Projects",
   },
+  {
+    route: '#contact',
+    name: "Contact"
+  }
 ];
 
 export const resume =
