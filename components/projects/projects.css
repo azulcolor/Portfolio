@@ -7,7 +7,7 @@
 }
 
 .projects-title {
-    @apply text-gray-300 text-5xl font-medium self-center 
+    @apply text-gray-200 text-5xl font-medium self-center 
 }
 
 .projects-project {
@@ -23,11 +23,11 @@
 }
 
 .project-info__name {
-    @apply grow-[4] 
+    @apply grow 
 }
 
 .project-info__year {
-    @apply grow-[1]
+    @apply mr-6
 }
 
 .project-images {
