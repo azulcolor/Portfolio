@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface Props {
   imagePath: StaticImageData;
@@ -7,8 +8,8 @@ interface Props {
 
 export const ProjectImage = ({ imagePath }: Props) => {
   return (
-    <div className="project-image__container">
+    <Link href="/" className="project-image__container">
       <Image src={imagePath} alt="project_image" className="project-image" />
-    </div>
+    </Link>
   );
 };

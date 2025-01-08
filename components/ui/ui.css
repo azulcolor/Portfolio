@@ -19,6 +19,6 @@
 }
 
 .custom-cursor {
-    @apply md:fixed md:top-0 md:left-0 md:bg-white rounded-full pointer-events-none mix-blend-difference;
+    @apply md:fixed md:top-0 md:left-0 md:bg-white rounded-full pointer-events-none mix-blend-difference flex justify-center items-center text-lg font-bold;
     z-index: 60;
 }

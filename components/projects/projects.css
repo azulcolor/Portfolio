@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .projects-container { 
-    @apply bg-black z-30 flex flex-col gap-6 px-12 md:py-24 py-12 h-auto sticky snap-always snap-center
+    @apply bg-projectBg z-30 flex flex-col gap-6 px-12 h-auto snap-always snap-center md:py-16 py-12 sticky
 }
 
 .projects-title {
-    @apply text-gray-300 text-5xl font-medium self-center
+    @apply text-gray-300 text-5xl font-medium self-center 
 }
 
 .projects-project {
@@ -15,7 +15,7 @@
 }
 
 .projects {
-    @apply flex flex-col gap-24
+    @apply flex flex-col gap-20
 }
 
 .project-info {

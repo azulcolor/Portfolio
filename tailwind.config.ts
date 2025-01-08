@@ -19,6 +19,7 @@ export default {
         text: "hsl(0, 0, 0)",
         scrollbar: "hsl(0, 0, 80)",
         stackBg: "hsl(248, 30, 13)",
+        projectBg: "hsl(248, 20, 11)",
       },
       fontFamily: {
         sans: ["var(--font-gelasio)"],

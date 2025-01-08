@@ -1,9 +1,4 @@
-import { StaticImageData } from "next/image"
-
-export type Images = {
-    name: string,
-    imagePath: StaticImageData
-}
+import { Images } from "@/types"
 
 export interface ProjectData {
     name: string

@@ -8,13 +8,13 @@ export const useChangeColor = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-              setIsDarkSection(entry.target.classList.contains("dark-section"));
+            setIsDarkSection(entry.target.classList.contains("dark-section"));
           }
         });
       },
       {
         root: null,
-        threshold: .9,
+        threshold: 0.9,
       }
     );
 
@@ -24,7 +24,7 @@ export const useChangeColor = () => {
     return () => {
       sections.forEach((section) => observer.unobserve(section));
     };
-  }, []);
+  }, [isDarkSection]);
 
   return { isDarkSection };
 };

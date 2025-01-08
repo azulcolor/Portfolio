@@ -3,13 +3,13 @@ import { projects } from "./constants";
 
 export const Projects = () => {
   return (
-    <section className="dark-section projects-container">
+    <section className="dark-section projects-container" id="projects">
       <h2 className="projects-title">Projects</h2>
-      <section className="projects">
+      <div className="projects">
         {projects.map((project) => (
           <Project projectData={project} key={project.name} />
         ))}
-      </section>
+      </div>
     </section>
   );
 };
