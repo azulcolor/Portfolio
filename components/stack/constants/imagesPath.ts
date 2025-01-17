@@ -18,7 +18,8 @@ import javascriptIcon from '@/public/svg/javascript-original.svg'
 import jestIcon from '@/public/svg/jest-plain.svg'
 import materialuiIcon from '@/public/svg/materialui-original.svg'
 import postmanIcon from '@/public/svg/postman-original.svg'
+import openIAIcon from '@/public/svg/openia.svg'
 
-export const imagesPath: StaticImport[] = [reactIcon, expressIcon, figmaIcon, gitIcon, mongoIcon, mySql, nestIcon, nextIcon, oracleIcon, postgresIcon, reduxIcon, tailwindIcon, typescriptIcon, dockerIcon, javascriptIcon, jestIcon, materialuiIcon, postmanIcon]
+export const imagesPath: StaticImport[] = [reactIcon, openIAIcon, expressIcon, figmaIcon, gitIcon, mongoIcon, mySql, nestIcon, nextIcon, oracleIcon, postgresIcon, reduxIcon, tailwindIcon, typescriptIcon, dockerIcon, javascriptIcon, jestIcon, materialuiIcon, postmanIcon]
 
 export const imagesLength = imagesPath.length 

@@ -1,25 +1,13 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { useHabilities } from "./hook";
+import { WordTransition } from "@/components/ui/wordTransition";
+import { adjectives } from "./constants";
 
 export const Habilities = () => {
-  const { currentAdjective } = useHabilities();
 
   return (
     <div className="presentation-subtitle__habilities-container">
-      <AnimatePresence mode="wait">
-        <motion.p
-          key={currentAdjective}
-          className="presentation-subtitle__habilities"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
-        >
-          {currentAdjective}
-        </motion.p>
-      </AnimatePresence>
+          <WordTransition words={adjectives}/>
     </div>
   );
 };

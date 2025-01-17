@@ -1,14 +1,15 @@
 "use client";
 
-import { ResumeButton } from "./components";
-import { RoutesList } from "./components/RoutesList";
-import { useChangeColor } from "./hooks";
+import { RoutesList, ResumeButton } from "./components";
+import { useChangeColor } from './hooks/useChangeColor'
 
 export const Header = () => {
-  const { isDarkSection } = useChangeColor()
+  const { isDarkSection } = useChangeColor();
 
   return (
-    <header className={`header-container transition-colors ${isDarkSection ? "text-gray-200" : "text-black"}`}>
+    <header
+      className={`header-container transition-colors ${isDarkSection ? "text-gray-200" : "text-black"}`}
+    >
       <ul className="header-list">
         <RoutesList />
         <li>

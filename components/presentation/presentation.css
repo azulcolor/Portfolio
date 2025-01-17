@@ -26,6 +26,6 @@
   @apply bg-gradient-to-r from-purple-600 from-70% to-purple-500 w-48 px-4 py-2 rounded-lg shadow-md flex-grow md:ml-0 md:flex-grow-0;
 }
 
-.presentation-subtitle__habilities {
+.presentation-subtitle__habilities-container > p {
   @apply text-background text-2xl text-center md:text-3xl;
 }

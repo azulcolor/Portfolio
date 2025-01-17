@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useCursorAnimation } from "./hooks";
+import { useCursorAnimation } from "./";
 
 export const CustomCursor = () => {
   const { cursorPosition, cursorSize, cursorText } = useCursorAnimation();
