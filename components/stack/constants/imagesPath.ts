@@ -1,3 +1,5 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+
 import reactIcon from '@/public/svg/react-original.svg'
 import expressIcon from '@/public/svg/express-original.svg'
 import figmaIcon from '@/public/svg/figma-original.svg'
@@ -17,4 +19,6 @@ import jestIcon from '@/public/svg/jest-plain.svg'
 import materialuiIcon from '@/public/svg/materialui-original.svg'
 import postmanIcon from '@/public/svg/postman-original.svg'
 
-export const imagesPath = [reactIcon, expressIcon, figmaIcon, gitIcon, mongoIcon, mySql, nestIcon, nextIcon, oracleIcon, postgresIcon, reduxIcon, tailwindIcon, typescriptIcon, dockerIcon, javascriptIcon, jestIcon, materialuiIcon, postmanIcon]
+export const imagesPath: StaticImport[] = [reactIcon, expressIcon, figmaIcon, gitIcon, mongoIcon, mySql, nestIcon, nextIcon, oracleIcon, postgresIcon, reduxIcon, tailwindIcon, typescriptIcon, dockerIcon, javascriptIcon, jestIcon, materialuiIcon, postmanIcon]
+
+export const imagesLength = imagesPath.length 

@@ -22,3 +22,26 @@
     @apply md:fixed md:top-0 md:left-0 md:bg-white rounded-full pointer-events-none mix-blend-difference flex justify-center items-center text-lg font-bold;
     z-index: 60;
 }
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 16));
+    }
+  }
+  
+  .slider {
+    @apply bg-red-600 bg-opacity-15 py-12 border-t border-b border-red-400 overflow-hidden w-full;
+  }
+  
+  .slide-track {
+    @apply flex items-center ;
+    animation: scroll 28s linear infinite;
+  }
+  
+  .slide {
+    @apply h-24 w-[250px] flex;
+  }

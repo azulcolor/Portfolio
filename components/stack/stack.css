@@ -6,18 +6,6 @@
   @apply flex flex-col items-center justify-center bg-stackBg rounded-ss-3xl rounded-se-3xl z-20 gap-16;
 }
 
-.parallax {
-  width: calc(100vw - 5px);
-}
-
-.parallax {
-  @apply overflow-hidden whitespace-nowrap flex flex-nowrap bg-red-600 bg-opacity-15 py-12 border-t border-b border-red-400;
-}
-
-.parallax .scroller {
-  @apply whitespace-nowrap flex flex-nowrap gap-28;
-}
-
 .stack__text-container {
   @apply flex flex-col items-center gap-12;
 }
@@ -38,25 +26,3 @@
   @apply text-gray-100 text-2xl px-6 md:text-3xl md:w-2/3 text-center;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 16));
-  }
-}
-
-.slider {
-  @apply bg-red-600 bg-opacity-15 py-12 border-t border-b border-red-400 overflow-hidden w-full;
-}
-
-.slide-track {
-  @apply flex items-center;
-  animation: scroll 24s linear infinite;
-  width: calc(250px * 32);
-}
-
-.slide {
-  @apply h-24 w-[250px] flex;
-}
