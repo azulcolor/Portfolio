@@ -43,7 +43,7 @@
 }
 
 .project-stack {
-  @apply flex flex-wrap self-start lg:gap-24 gap-12 bg-orange-600 border-y md:border-r bg-opacity-15 p-4 border-orange-800 justify-center rounded-tr-md rounded-br-md md:mt-6;
+  @apply flex flex-wrap self-start lg:gap-20 gap-12 bg-orange-600 border-y md:border-r bg-opacity-15 p-4 md:pr-8 border-orange-800 justify-center rounded-tr-md rounded-br-md md:mt-6;
 }
 
 .project-stack img {
