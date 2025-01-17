@@ -1,2 +1,2 @@
-export * from './images/Images'
+export * from './logos/Logos'
 export * from './Text'

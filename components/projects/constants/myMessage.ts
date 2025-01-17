@@ -1,4 +1,4 @@
-import { myMessageImages } from "@/constants/images";
+import { myMessageImages, myMessageLogosPath } from "@/constants/images";
 import { ProjectData } from "../types";
 
 const images = myMessageImages.slice(0, 4);
@@ -8,4 +8,5 @@ export const myMessage: ProjectData = {
   slug: "myMessage",
   year: "2024",
   images,
+  technologiesImages: myMessageLogosPath
 };

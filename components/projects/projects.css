@@ -2,42 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-.projects-container { 
-    @apply bg-projectBg z-30 flex flex-col gap-6 px-12 h-auto snap-always snap-center md:py-16 py-12 sticky
+.projects-container {
+  @apply bg-projectBg z-30 flex flex-col gap-6 px-12 h-auto snap-always snap-center md:py-16 py-12 sticky;
 }
 
 .projects-title {
-    @apply text-gray-200 text-5xl font-medium self-center 
+  @apply text-gray-200 text-5xl font-medium;
 }
 
 .projects-project {
-    @apply border-t border-gray-500 
+  @apply flex flex-col border-t border-gray-500;
 }
 
 .projects {
-    @apply flex flex-col gap-20
+  @apply flex flex-col lg:gap-16 gap-8;
 }
 
 .project-info {
- @apply py-6 text-2xl font-medium text-gray-300 flex
+  @apply py-6 text-2xl font-medium text-gray-300 flex;
 }
 
 .project-info__name {
-    @apply grow 
+  @apply grow;
 }
 
 .project-info__year {
-    @apply mr-6
+  @apply mr-6;
 }
 
 .project-images {
-    @apply h-min flex gap-8 flex-wrap md:flex-nowrap
+  @apply h-min flex gap-8 flex-wrap md:flex-nowrap pb-12;
 }
 
 .project-image__container {
-    @apply overflow-hidden
+  @apply overflow-hidden;
 }
 
 .project-image {
-    @apply opacity-95 hover:scale-105 transition delay-100
+  @apply opacity-95 hover:scale-105 transition delay-100;
+}
+
+.project-stack {
+  @apply flex flex-wrap self-start lg:gap-24 gap-12 bg-orange-600 border-y md:border-r bg-opacity-15 p-4 border-orange-800 justify-center rounded-tr-md rounded-br-md md:mt-6;
+}
+
+.project-stack img {
+    @apply hover:scale-125 transition delay-150 
 }

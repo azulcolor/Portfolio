@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProjectData } from "../../types";
 import { ProjectImage } from "./components";
 
@@ -17,6 +18,11 @@ export const Project = ({ projectData }: Props) => {
       <div className="project-images">
         {images.map((image) => (
           <ProjectImage key={image.name} imagePath={image.imagePath} />
+        ))}
+      </div>
+      <div className="project-stack">
+        {projectData.technologiesImages.map((image, index) => (
+          <Image src={image} height={32} key={index} alt={index.toString()} />
         ))}
       </div>
     </div>

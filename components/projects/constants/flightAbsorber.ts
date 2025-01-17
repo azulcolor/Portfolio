@@ -1,4 +1,4 @@
-import { flightAbsorberImages } from "@/constants/images";
+import { flightAbsorberImages, flightAbsorberLogosPath } from "@/constants/images";
 import { ProjectData } from "../types";
 
 const images = flightAbsorberImages.slice(0, 4);
@@ -8,4 +8,5 @@ export const flightAbsorber: ProjectData = {
   slug: "flightAbsorber",
   year: "2023",
   images,
+  technologiesImages: flightAbsorberLogosPath 
 };

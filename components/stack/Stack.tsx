@@ -1,14 +1,14 @@
+import { logosPathLength } from "@/constants/images";
 import { Slider } from "../ui/Slider";
-import { Images, Text } from "./components";
-import { imagesLength } from "./constants";
+import { Logos, Text } from "./components";
 
 export const Stack = () => {
   return (
     <section className="stack-container dark-section sticky-section" id="stack">
       <Text />
-      <Slider elementLength={imagesLength}>
-        <Images />
-        <Images />
+      <Slider elementLength={logosPathLength}>
+        <Logos />
+        <Logos />
       </Slider>
     </section>
   );
