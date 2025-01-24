@@ -1,7 +1,7 @@
 @import "../components/presentation/presentation.css";
 @import "../components/stack/stack.css";
 @import "../components/ui/ui.css";
-@import "../components/projects/styles/projects.css";
+@import "../components/projects/projects.css";
 
 @tailwind base;
 @tailwind components;
