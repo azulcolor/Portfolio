@@ -1,23 +1,14 @@
 @import "../components/presentation/presentation.css";
 @import "../components/stack/stack.css";
 @import "../components/ui/ui.css";
-@import "../components/projects/projects.css";
+@import "../components/projects/styles/projects.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   --scrollbar: #343335;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  scroll-snap-type: y mandatory;
-  cursor: none
 }
 
 * {

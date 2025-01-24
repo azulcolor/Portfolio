@@ -11,7 +11,7 @@
 }
 
 .header-list__button {
-    @apply hover:cursor-none bg-green-500 text-white px-6 py-2 rounded-lg relative overflow-hidden inline-block text-center w-24 h-10 mt-1 shadow-sm
+    @apply hover:cursor-none bg-green-600 text-white px-6 py-2 rounded-lg relative overflow-hidden inline-block text-center w-24 h-10 mt-1 shadow-sm
 }
 
 .header-list__button span {

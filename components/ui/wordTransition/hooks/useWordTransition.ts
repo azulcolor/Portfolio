@@ -8,7 +8,7 @@ export const useWordTransition = (words: string[]) => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   const currentWord = words[currentWordIndex];
 

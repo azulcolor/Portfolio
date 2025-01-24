@@ -17,7 +17,7 @@ export const Project = ({ projectData }: Props) => {
       </div>
       <div className="project-images">
         {images.map((image) => (
-          <ProjectImage key={image.name} imagePath={image.imagePath} />
+          <ProjectImage key={image.name} imagePath={image.imagePath} projectType={image.projectType}/>
         ))}
       </div>
       <div className="project-stack">
